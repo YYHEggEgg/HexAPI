@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexAPI", "HexAPI\HexAPI.csproj", "{DE1FB1DB-9C87-4CDF-99BD-1C32BEB7D3CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE1FB1DB-9C87-4CDF-99BD-1C32BEB7D3CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1FB1DB-9C87-4CDF-99BD-1C32BEB7D3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1FB1DB-9C87-4CDF-99BD-1C32BEB7D3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1FB1DB-9C87-4CDF-99BD-1C32BEB7D3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D709692-F8EC-4991-8BBD-2DF82D917BA7}
+	EndGlobalSection
+EndGlobal
