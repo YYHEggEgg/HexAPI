@@ -53,7 +53,17 @@ namespace YYHEggEgg.HexAPI
 
         public override void OverWriteRange(long start, byte[] bytes, long length)
         {
-            throw new NotImplementedException();
+            if (length > int.MaxValue)
+                throw new NotSupportedException(
+                    "Set bytes >= 4GiB at a time is not currently supported.");
+
+            Assert.ArgumentOutOfRange(start, Length, start + length);
+
+            using (BinaryWriter writer = new BinaryWriter(new FileStream(file.FullName, FileMode.Open)))
+            {
+                writer.BaseStream.Seek(start, SeekOrigin.Begin);
+                writer.Write(bytes, 0, (int)length);
+            }
         }
 
         public override void RemoveRange(long start, long length)
